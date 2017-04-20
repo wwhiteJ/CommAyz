@@ -34,7 +34,7 @@ public class HttpUtil {
 			connection.setRequestProperty("Connection", "keep-alive");  
 			connection.setRequestProperty("Cache-Control", "no-cache"); 
 			connection.connect();
-			in = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
+			in = new BufferedReader(new InputStreamReader(connection.getInputStream(), "GBK"));
 			String line;
 			while ((line = in.readLine()) != null) {
 				result += line;

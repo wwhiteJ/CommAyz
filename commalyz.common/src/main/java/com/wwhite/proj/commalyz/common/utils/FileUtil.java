@@ -227,6 +227,17 @@ public class FileUtil {
             }
         }
     }
+
+    public static boolean makeDir(String outputDir){
+	    try{
+			File cityDir = new File(outputDir);
+			if( cityDir.exists() == false ){
+				cityDir.mkdir();
+			}
+		}catch(Exception e){
+		}
+	    return true;
+    }
 }
 
 
